@@ -15,7 +15,7 @@ public class Shot : MonoBehaviour
 
     [SerializeField]
     [Tooltip("弾の速さ")]
-    private float speed = 30f;
+    private float speed = 5f;
 
     // Update is called once per frame
     void Update()
