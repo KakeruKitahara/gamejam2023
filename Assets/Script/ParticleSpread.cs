@@ -14,12 +14,12 @@ public class ParticleSpread : MonoBehaviour
     private float scaleUpTime = 0.03f;
     //ScaleUpする割合
     [SerializeField]
-    private float scaleUpParam = 0.1f;
+    private float scaleUpParam = 0.5f;
     //パーティクル削除用の経過時間
     private float elapsedDeleteTime = 0f;
     //パーティクルを削除するまでの時間
     [SerializeField]
-    private float deleteTime = 5f;
+    private float deleteTime = 1f;
 
     void Start()
     {
@@ -38,6 +38,7 @@ public class ParticleSpread : MonoBehaviour
         if (elapsedScaleUpTime > scaleUpTime) {
             transform.localScale += new Vector3(scaleUpParam, scaleUpParam, scaleUpParam);
             elapsedScaleUpTime = 0f;
+            scaleUpParam -= 0.015f;
         }
     }
 

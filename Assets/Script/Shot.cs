@@ -15,7 +15,7 @@ public class Shot : MonoBehaviour
 
     [SerializeField]
     [Tooltip("弾の速さ")]
-    private float speed = 5f;
+    //private float speed = 5f;
 
     // Update is called once per frame
     void Update()
@@ -37,9 +37,9 @@ public class Shot : MonoBehaviour
         // 上で取得した場所に、"bullet"のPrefabを出現させる
         GameObject newBall = Instantiate(bullet, bulletPosition, transform.rotation);
         // 出現させたボールのforward(z軸方向)
-        Vector3 direction = newBall.transform.forward;
+        //Vector3 direction = newBall.transform.forward;
         // 弾の発射方向にnewBallのz方向(ローカル座標)を入れ、弾オブジェクトのrigidbodyに衝撃力を加える
-        newBall.GetComponent<Rigidbody>().AddForce(direction * speed, ForceMode.Impulse);
+        //newBall.GetComponent<Rigidbody>().AddForce(direction * speed, ForceMode.Impulse);
         // 出現させたボールの名前を"bullet"に変更
         newBall.name = bullet.name;
         // 出現させたボールを1.0秒後に消す
