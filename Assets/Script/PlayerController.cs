@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     //Rigidbody playerRigidbody;
     float playerMovementSpeed;
     float playerRotationSpeed;
+    Vector3 _acceleration;
+    Vector3 _vel;
     public string noRideTag = "NoRideTag";
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,9 @@ public class PlayerController : MonoBehaviour
         //playerRigidbody = player.GetComponent<Rigidbody>();
         playerMovementSpeed = 0.5f;
         playerRotationSpeed = 1.2f;
+        _acceleration = Vector3.zero;
+        _vel = Vector3.zero;
+
     }
 
     // Update is called once per frame
@@ -26,10 +31,16 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += transform.forward * playerMovementSpeed;
+            //_acceleration += transform.forward * 0.1f;
+            //_vel += _acceleration * Time.deltaTime;
+            //transform.position = _vel * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.S))
         {
             transform.position -= transform.forward * playerMovementSpeed;
+            //_acceleration -= transform.forward * 0.1f;
+            //_vel += _acceleration * Time.deltaTime;
+            //transform.position = _vel * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.A))
         {

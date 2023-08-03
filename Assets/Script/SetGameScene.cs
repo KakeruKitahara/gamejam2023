@@ -5,11 +5,9 @@ using UnityEngine;
 public class SetGameScene : MonoBehaviour
 {
     GameObject player;
-    GameObject stage;
     GameObject enemy;
     GameObject goal;
     string playerPath ="SM_Veh_Car_Small_01";
-    string stagePath = "";
     string enemyPath = "SM_Veh_Car_Police_01";
     string goalPath = "SM_Prop_Sign_Pizza_01";
     string checkpointPath = "SM_Icon_Letter_Money_01";
@@ -17,8 +15,9 @@ public class SetGameScene : MonoBehaviour
     void Awake()
     {
         player = Resources.Load<GameObject>(playerPath);
-        if(player != null ) {
-            Instantiate(player, Vector3.zero+new Vector3(0,10,0), Quaternion.identity);
+        enemy= Resources.Load<GameObject>(enemyPath);
+        if (player != null ) {
+            Instantiate(player, Vector3.zero, Quaternion.identity);
         }
         //cameraê›íË
         if (player == null)
@@ -27,15 +26,10 @@ public class SetGameScene : MonoBehaviour
             transform.localPosition = new Vector3(0, 0, -5.0f);
         }
         //objectê∂ê¨
-        stage = Resources.Load<GameObject>(stagePath);
-        if (stage != null)
-        {
-            Instantiate(player, Vector3.zero, Quaternion.identity);
-        }
         enemy = Resources.Load<GameObject>(enemyPath);
         if (enemy != null)
         {
-            Instantiate(player, Vector3.zero, Quaternion.identity);
+            Instantiate(enemy, Vector3.zero + new Vector3(0,0,10), Quaternion.identity);
         }
         goal = Resources.Load<GameObject>(goalPath);
         if (player != null)
