@@ -17,6 +17,8 @@ public class Shot : MonoBehaviour
     [Tooltip("弾の速さ")]
     //private float speed = 5f;
 
+    public GameObject flashLight;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +27,8 @@ public class Shot : MonoBehaviour
         {
             // 弾を発射する
             LauncherShot();
+            flashLight.SetActive(true);
+            Invoke("LightOff", 1.0f);
         }
     }
 
@@ -44,5 +48,10 @@ public class Shot : MonoBehaviour
         newBall.name = bullet.name;
         // 出現させたボールを1.0秒後に消す
         Destroy(newBall, 1.0f);
+    }
+
+    private void LightOff()
+    {
+        flashLight.SetActive(false);
     }
 }
