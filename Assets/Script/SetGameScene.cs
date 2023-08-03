@@ -29,7 +29,7 @@ public class SetGameScene : MonoBehaviour
         enemy = Resources.Load<GameObject>(enemyPath);
         if (enemy != null)
         {
-            Instantiate(enemy, Vector3.zero + new Vector3(0,0,10), Quaternion.identity);
+            //Instantiate(enemy, Vector3.zero + new Vector3(0,0,10), Quaternion.identity);
         }
         goal = Resources.Load<GameObject>(goalPath);
         if (player != null)

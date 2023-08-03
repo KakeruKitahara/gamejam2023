@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {   
     GameObject player;
@@ -57,8 +57,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(noRideTag))
+        if (collision.gameObject.name == "Enemy")
         {
+            SceneManager.LoadScene("GameoverScene");
             // If a tag collides with an object matching the specified one, ignore the collision and do not ride
             //Physics.IgnoreCollision(GetComponent<Collider>(), collision.collider);
         }

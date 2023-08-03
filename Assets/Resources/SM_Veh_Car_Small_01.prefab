@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2493294881995631000}
   - component: {fileID: 2493294881995631007}
   - component: {fileID: 2493294881995631006}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4138535779755111274}
   - component: {fileID: 4138535779756052628}
   - component: {fileID: 4075213493002561526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 4138535779755129376}
   - component: {fileID: 4138535779756053460}
   - component: {fileID: 4075100327219208612}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 4138535779758007518}
   - component: {fileID: 4138535779755121206}
   - component: {fileID: 4138535779756233482}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_Plates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 4138535779755131926}
   - component: {fileID: 4138535779756079546}
   - component: {fileID: 4074968003136659160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 4138535779755111188}
   - component: {fileID: 4138535779756268614}
   - component: {fileID: 4075701749146302690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: -5921693040102674784}
   - component: {fileID: -7236690876944757072}
   - component: {fileID: -7606387042379947391}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_01
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58877bcdd88265844addadb8d3874f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noRideTag: NoRide
+  noRideTag: NoRideTag
 --- !u!114 &-7236690876944757072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 4138535779758111770}
   - component: {fileID: 4138535779755104532}
   - component: {fileID: 4138535779756064344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_SteeringW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 4138535779757992308}
   - component: {fileID: 4138535779755205798}
   - component: {fileID: 4138535779756266390}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Veh_Car_Small_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,7 +883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8121333230849521026}
   - component: {fileID: 402296426309898792}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: fireringPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
