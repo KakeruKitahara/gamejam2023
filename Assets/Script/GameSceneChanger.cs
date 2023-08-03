@@ -15,7 +15,7 @@ public class GameSceneChanger : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }

@@ -18,7 +18,7 @@ public class SetGameScene : MonoBehaviour
     {
         player = Resources.Load<GameObject>(playerPath);
         if(player != null ) {
-            Instantiate(player, Vector3.zero, Quaternion.identity);
+            Instantiate(player, Vector3.zero+new Vector3(0,10,0), Quaternion.identity);
         }
         //cameraê›íË
         if (player == null)

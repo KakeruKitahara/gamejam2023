@@ -15,7 +15,7 @@ public class TitleSceneChanger : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("TitleScene");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
