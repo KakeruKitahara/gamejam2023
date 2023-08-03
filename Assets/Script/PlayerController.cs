@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.name == "Enemy")
         {
-            SceneManager.LoadScene("GameoverScene");
+            SceneManager.LoadScene("GameOverScene 1");
             // If a tag collides with an object matching the specified one, ignore the collision and do not ride
             //Physics.IgnoreCollision(GetComponent<Collider>(), collision.collider);
         }

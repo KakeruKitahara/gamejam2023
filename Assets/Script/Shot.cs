@@ -19,6 +19,11 @@ public class Shot : MonoBehaviour
 
     public GameObject flashLight;
 
+    void Start()
+    {
+        flashLight.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {

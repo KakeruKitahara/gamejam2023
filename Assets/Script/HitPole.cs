@@ -29,7 +29,7 @@ public class HitPole : MonoBehaviour
             //player.enabled = false;
             StartCoroutine(Checking(() =>
             {
-                SceneManager.LoadScene("GameoverScene");
+                SceneManager.LoadScene("GameOverScene 1");
             }));
             
         }

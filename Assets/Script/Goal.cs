@@ -21,7 +21,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("ResultScene");
+            SceneManager.LoadScene("ResultScene_1");
         }
     }
 }
